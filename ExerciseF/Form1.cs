@@ -16,5 +16,17 @@ namespace ExerciseF
         {
             InitializeComponent();
         }
+       
+        private void bt_1_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(1, 7);
+            List1.Items.Add(randomNumber);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

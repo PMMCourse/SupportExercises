@@ -20,19 +20,24 @@ namespace ExerciseA
         private void Form1_Load(object sender, EventArgs e)
         {
             for (int i = 1; i < 11; i++) {
-
-                listBox1.Items.Add(i);
-                listBox2.Items.Add(i);
-
+                list1.Items.Add(i);
+                list2.Items.Add(i);
             }
+            
         }
 
-        private void bt1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(listBox1.SelectedItem);
-            int num2 = Convert.ToInt32(listBox2.SelectedItem);
+           int numero1 = Convert.ToInt32(list1.SelectedItem);
+           int numero2 = Convert.ToInt32(list2.SelectedItem);
+            int reultado = numero1 * numero2;
 
-            MessageBox.Show("El Resultado es: "+(num1*num2));
+            MessageBox.Show("La multiplicacion es: " +reultado);
+        }
+
+        private void list1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

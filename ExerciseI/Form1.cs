@@ -16,5 +16,12 @@ namespace ExerciseI
         {
             InitializeComponent();
         }
+
+        private void bt1_MouseMove(object sender, MouseEventArgs e)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(397, 440);
+            bt1.Location = new Point(randomNumber);
+        }
     }
 }

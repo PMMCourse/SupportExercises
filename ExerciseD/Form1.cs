@@ -16,5 +16,27 @@ namespace ExerciseD
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txt_1palabra.MaxLength = 1;
+            label1.Text = txt_1palabra.Text;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = txt_1palabra.Text + " " + txt_2palabra.Text;
+
+        }
+
+        private void txt_1palabra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
     }
 }
