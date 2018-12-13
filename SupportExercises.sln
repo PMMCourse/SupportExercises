@@ -46,6 +46,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseQ", "ExerciseQ\Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseR", "ExerciseR\ExerciseR.csproj", "{34DDF86D-1199-45AA-A93F-AA5EC5A34777}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{801FF3CD-C916-4DDD-87FB-28E9421AF73A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +130,10 @@ Global
 		{34DDF86D-1199-45AA-A93F-AA5EC5A34777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34DDF86D-1199-45AA-A93F-AA5EC5A34777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34DDF86D-1199-45AA-A93F-AA5EC5A34777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801FF3CD-C916-4DDD-87FB-28E9421AF73A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801FF3CD-C916-4DDD-87FB-28E9421AF73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801FF3CD-C916-4DDD-87FB-28E9421AF73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801FF3CD-C916-4DDD-87FB-28E9421AF73A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
