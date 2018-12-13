@@ -16,5 +16,21 @@ namespace ExerciseD
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Contains(textBox1.Text)&& textBox1.Text!="")
+            {
+                label1.Text = textBox2.Text;
+            }
+        }
+    
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

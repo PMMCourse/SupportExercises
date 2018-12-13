@@ -16,5 +16,25 @@ namespace ExerciseC
         {
             InitializeComponent();
         }
+
+        private void buttonOpen_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                
+
+                
+                pictureBoxPoster.Image = new Bitmap(openFileDialog1.FileName);
+
+               
+
+
+            }
+        }
+        
     }
 }

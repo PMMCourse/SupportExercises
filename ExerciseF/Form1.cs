@@ -16,5 +16,13 @@ namespace ExerciseF
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int num = rnd.Next(1, 7);
+            listBox1.Items.Add(num);
+
+        }
     }
 }
