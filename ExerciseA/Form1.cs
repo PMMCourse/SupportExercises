@@ -16,5 +16,23 @@ namespace ExerciseA
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i < 11; i++) {
+
+                listBox1.Items.Add(i);
+                listBox2.Items.Add(i);
+
+            }
+        }
+
+        private void bt1_Click(object sender, EventArgs e)
+        {
+            int num1 = Convert.ToInt32(listBox1.SelectedItem);
+            int num2 = Convert.ToInt32(listBox2.SelectedItem);
+
+            MessageBox.Show("El Resultado es: "+(num1*num2));
+        }
     }
 }
